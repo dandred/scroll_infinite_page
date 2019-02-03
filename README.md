@@ -10,10 +10,10 @@ from time import sleep
 
 URL = 'http://scrollmagic.io/examples/advanced/infinite_scrolling.html'
 
-def scroll(browser):
-    for _ in range(100):  # change this number to cover the entire length of the page
+def scroll(browser, pages=100, sleep_time_s=4 ):
+    for _ in range(pages):  # change this number to cover the entire lenght of the page
         browser.find_element_by_tag_name('body').send_keys(Keys.PAGE_DOWN)
-        sleep(4)  # try different values depending on how fast the page is loading
+        sleep(sleep_time_s)  # try different values depending on how fast the page is loading
 
 # Call the scroll function
 if __name__ == '__main__':
