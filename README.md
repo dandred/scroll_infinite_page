@@ -3,7 +3,7 @@ When other methods to process an infinite page fail, you can use the <a href="ht
 Depending on how fast the web page is loading the next section, you will have to experiment with the sleep time between page down commands. Most of the "infinite" pages are actually finite, so the number of iterations depends on the length of the page. If there are more iterations then necessary, the for loop will reach the end of the page and will continue to execute without error, but it will add a delay.
 
 
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
