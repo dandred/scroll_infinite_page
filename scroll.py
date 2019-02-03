@@ -14,4 +14,7 @@ browser.get(URL)
 sleep(1)
 
 # Call the scroll function
-scroll(browser)
+if __name__ == '__main__':
+    scroll(browser)
+    
+    
